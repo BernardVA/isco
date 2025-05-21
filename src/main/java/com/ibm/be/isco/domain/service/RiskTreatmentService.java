@@ -15,12 +15,13 @@ public class RiskTreatmentService {
 
   @Autowired private RiskTreatmentRepository riskTreatmentRepository;
 
-  public Page<RiskTreatment> findPersons(
+  public Page<RiskTreatment> findRiskTreatments(
       RiskTreatmentFilter riskTreatmentFilter, Pageable pageable) {
 
     if (riskTreatmentFilter.getTitle() != null) {
       return riskTreatmentRepository.findByTitle(riskTreatmentFilter.getTitle(), pageable);
+    } else {
+      return riskTreatmentRepository.findAll(pageable);
     }
-    return Page.empty();
   }
 }

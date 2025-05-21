@@ -48,6 +48,7 @@ public class RiskTreatmentResource {
 
     return ResponseEntity.ok(
         personMapper.mapToPaginatedResult(
-            personService.findPersons(personMapper.toDomain(riskTreatmentFilterDTO), pageable)));
+            personService.findRiskTreatments(
+                personMapper.toDomain(riskTreatmentFilterDTO), pageable)));
   }
 }

@@ -1,28 +1,18 @@
 package com.ibm.be.isco.resource.api;
 
 import com.fasterxml.jackson.annotation.JsonRootName;
+import java.time.LocalDateTime;
 import lombok.Data;
-import org.apache.commons.lang3.StringUtils;
 
 @Data
-@JsonRootName(value = "Person")
+@JsonRootName(value = "RiskTreatment")
 public class RiskTreatmentDTO {
 
-  private String personNumber;
+  private String riskTreatmentId;
 
-  private String language;
+  private String title;
 
-  private String street;
+  private String description;
 
-  private String houseNumber;
-
-  private String postCode;
-
-  private String city;
-
-  private String country;
-
-  public String getType() {
-    return StringUtils.replace(this.getClass().getSimpleName(), "DTO", "");
-  }
+  private LocalDateTime createdAt;
 }
