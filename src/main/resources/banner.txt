@@ -1,0 +1,11 @@
+${AnsiColor.RED}
+ _____ _____ _____ _____ 
+|_   _/  ___/  __ \  _  |
+  | | \ `--.| /  \/ | | |
+  | |  `--. \ |   | | | |
+ _| |_/\__/ / \__/\ \_/ /
+ \___/\____/ \____/\___/ 
+                         
+                                    
+${AnsiColor.YELLOW}:: ${application.title} - v${application.version} ::
+${AnsiColor.BLUE}:: Running Spring Boot${spring-boot.formatted-version} on Java (${java.vendor} v${java.version}) ::

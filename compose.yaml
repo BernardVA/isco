@@ -1,0 +1,18 @@
+services:
+  #################
+  ##  Postgress  ##
+  #################
+  postgres:
+    image: "postgres:latest"
+    environment:
+      - "POSTGRES_DB=isco"
+      - "POSTGRES_USER=iscouser"
+      - "POSTGRES_PASSWORD=iscopassword"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  postgres_data:
+    driver: local
