@@ -14,5 +14,7 @@ public class RiskTreatmentDTO {
 
   private String description;
 
+  private String cost;
+
   private LocalDateTime createdAt;
 }

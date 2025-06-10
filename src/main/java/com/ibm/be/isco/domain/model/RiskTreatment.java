@@ -28,6 +28,9 @@ public class RiskTreatment {
   @Column(name = "description", nullable = true)
   private String description;
 
+  @Column(name = "cost", nullable = true)
+  private String cost;
+
   @Column(name = "created_at", nullable = true)
   private LocalDateTime createdAt;
 }
