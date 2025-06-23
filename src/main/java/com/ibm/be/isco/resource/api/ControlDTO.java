@@ -10,7 +10,7 @@ public class ControlDTO {
     private Long controlId;
     private String strength;
     private String relevance;
-    private String implementation;
+    private int implementation; // Changed from String to int
     private String cost;
     private LocalDateTime createdAt;
 }
