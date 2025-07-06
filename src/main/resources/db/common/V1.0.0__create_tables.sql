@@ -9,10 +9,16 @@ CREATE TABLE risk_treatment (
 
 CREATE TABLE control (
     control_id BIGSERIAL NOT NULL,
-	strength VARCHAR(255),
-	relevance VARCHAR(255),
-	implementation VARCHAR(255),
+	relevance BIGINT,
+	implementation INT,
 	cost VARCHAR(255),
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	CONSTRAINT control_pk PRIMARY KEY (control_id)
+);
+
+CREATE TABLE control_strength (
+    control_strength_id BIGSERIAL NOT NULL,
+    score FLOAT,
+    calculated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT control_strength_pk PRIMARY KEY (control_strength_id)
 );

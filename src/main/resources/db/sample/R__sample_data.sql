@@ -7,9 +7,9 @@ VALUES
 
 
 
-INSERT INTO control (control_id, strength, relevance, implementation, cost, created_at)
+INSERT INTO control (control_id, relevance, implementation, cost, created_at)
 VALUES
-  (nextval('control_id_seq'), 'H', 'H', 'H',100, CURRENT_TIMESTAMP),
-  (nextval('control_id_seq'), 'M', 'M', 'M',200, CURRENT_TIMESTAMP),
-  (nextval('control_id_seq'), 'L', 'L', 'L',300, CURRENT_TIMESTAMP),
-  (nextval('control_id_seq'), 'VL', 'VL', 'VL',10, CURRENT_TIMESTAMP);
+  (nextval('control_id_seq'), 100,  100,100, CURRENT_TIMESTAMP),
+  (nextval('control_id_seq'), 200,  200,200, CURRENT_TIMESTAMP),
+  (nextval('control_id_seq'), 300,  300,300, CURRENT_TIMESTAMP),
+  (nextval('control_id_seq'), 10,  10,10, CURRENT_TIMESTAMP);

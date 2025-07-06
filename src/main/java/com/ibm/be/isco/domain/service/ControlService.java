@@ -13,6 +13,7 @@ public class ControlService {
     private ControlRepository controlRepository;
 
     public List<Control> findAll() {
+        
         return controlRepository.findAll();
     }
 
@@ -27,4 +28,6 @@ public class ControlService {
     public void deleteById(Long id) {
         controlRepository.deleteById(id);
     }
+
+   
 }

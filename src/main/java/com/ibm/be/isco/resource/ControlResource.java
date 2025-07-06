@@ -22,21 +22,14 @@ public class ControlResource {
     @GetMapping
     public List<ControlDTO> getAllControls() {
         return controlService.findAll().stream()
-                .map(controlMapper::toDTO)
+                .map(controlMapper::toDto)
                 .collect(Collectors.toList());
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<ControlDTO> getControlById(@PathVariable Long id) {
-        Optional<Control> control = controlService.findById(id);
-        return control.map(value -> ResponseEntity.ok(controlMapper.toDTO(value)))
-                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PostMapping
     public ControlDTO createControl(@RequestBody ControlDTO controlDTO) {
         Control control = controlMapper.toEntity(controlDTO);
-        return controlMapper.toDTO(controlService.save(control));
+        return controlMapper.toDto(controlService.save(control));
     }
 
     @PutMapping("/{id}")
@@ -47,7 +40,7 @@ public class ControlResource {
         }
         Control control = controlMapper.toEntity(controlDTO);
         control.setControlId(id);
-        return ResponseEntity.ok(controlMapper.toDTO(controlService.save(control)));
+        return ResponseEntity.ok(controlMapper.toDto(controlService.save(control)));
     }
 
     @DeleteMapping("/{id}")

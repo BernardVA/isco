@@ -13,14 +13,11 @@ public class Control {
     @Column(name = "control_id")
     private Long controlId;
 
-    @Column(name = "strength")
-    private String strength;
-
     @Column(name = "relevance")
-    private String relevance;
+    private Long relevance;
 
     @Column(name = "implementation")
-    private String implementation;
+    private int implementation;
 
     @Column(name = "cost")
     private String cost;
