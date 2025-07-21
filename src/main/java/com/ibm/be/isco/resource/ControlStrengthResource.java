@@ -27,6 +27,7 @@ public class ControlStrengthResource {
     @Autowired
     private ControlMapper controlMapper;
 
+    @CrossOrigin(origins = "http://localhost:4200") // added to allow CORS requests from Angular app
     @GetMapping
     public List<Object> getAll() {
 
