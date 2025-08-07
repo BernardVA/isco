@@ -1,13 +1,16 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+
+import { ControlStrengthsService } from './services/controlstrengths.service';
+
 import { RouterOutlet } from '@angular/router';
+
 
 
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  templateUrl: './app.html',
+  templateUrl: 'app.html',
   styleUrl: './app.css',
   standalone: true
 })
@@ -15,20 +18,29 @@ import { RouterOutlet } from '@angular/router';
 export class App implements OnInit {
 
   protected title = 'isco 5.4';
-  controlStrengths = 'No data yett';
-  constructor(private http: HttpClient) { }
+  controlStrengths: any;
+  controls: any;
+  constructor(private controlStrengthsService: ControlStrengthsService) { }
 
   ngOnInit() {
-    console.log('App component initialized BVV');
-    this.controlStrengths = 'rzedrz'
-    this.title = 'Hello, isco';
-    this.http.get('http://localhost:8080/api/control-strengths', {observe: 'response'}).subscribe(data => {
-      this.controlStrengths = JSON.stringify(data)  ;  
-      this.controlStrengths = 'arrived here';    
-       console.log('App component initialized VA');      
-    });
-    //  
+
+    this.title = 'Hello, isco Hier';
+    this.controlStrengthsService.getControlStrengths().subscribe(
+      (data) => {
+        this.controlStrengths = data;
+        console.log('Control Strengths:', this.controlStrengths);
+
+      });
+    this.controlStrengthsService.getControls().subscribe(
+      (data2) => {
+        this.controls = data2;
+        console.log('Controls:', this.controls);
+
+      });    
+
+
 
 
   }
+
 }
