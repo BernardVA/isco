@@ -30,16 +30,20 @@ public class ControlStrengthResource {
     @CrossOrigin(origins = "http://localhost:4200") // added to allow CORS requests from Angular app
     @GetMapping
     public List<Object> getAll() {
-
-        List<ControlDTO> listControls = controlService.findAll().stream()
-                .map(controlMapper::toDto)
-                .collect(Collectors.toList());
+        // The following was originally added to concatenate control strengths with
+        // controls. Can now be removed.
+        /*
+         * List<ControlDTO> listControls = controlService.findAll().stream()
+         * .map(controlMapper::toDto)
+         * .collect(Collectors.toList());
+         */
         List<ControlStrengthDTO> listControlStrengths = controlStrengthService.findAll().stream()
                 .map(controlStrengthMapper::toDto)
                 .collect(Collectors.toList());
         List<Object> combinedList = new java.util.ArrayList<>();
-        combinedList.addAll(listControlStrengths);
-        combinedList.addAll(listControls);
+        combinedList.addAll(listControlStrengths); // deactivated to avoid duplication
+        // combinedList.addAll(listControls); this was originally added to concatenate
+        // control strengths with controls. Can now be removed.
         return combinedList;
     }
 

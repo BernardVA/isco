@@ -18,7 +18,7 @@ public class ControlResource {
     private ControlService controlService;
     @Autowired
     private ControlMapper controlMapper;
-
+@CrossOrigin(origins = "http://localhost:4200") // added to allow CORS requests from Angular app
     @GetMapping
     public List<ControlDTO> getAllControls() {
         return controlService.findAll().stream()
