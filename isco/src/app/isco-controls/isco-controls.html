@@ -1,0 +1,28 @@
+<p>isco-controls works, Bernard!</p>
+<button (click)="loadIscoData()">Reload Data</button>
+<table>
+        <tr>
+          <th>controlStrengthId</th>
+          <th>score</th>
+        </tr>
+        @for (controlstrength of controlStrengths; track controlstrength.controlStrengthId) {
+        <tr>
+          <td>{{controlstrength.controlStrengthId}}</td>
+          <td> {{controlstrength.score}}</td>
+        </tr>   
+        }
+        <tr>  
+          <th>controlId</th>
+          <th>relevance</th>
+          <th>implementation</th> 
+          <th>cost</th>
+        </tr> 
+        @for (control of controls; track control.controlId) {
+        <tr>
+          <td>{{control.controlId}}</td>
+          <td> {{control.relevance}}</td>
+          <td>{{control.implementation}}</td>
+          <td> {{control.cost}}</td>
+        </tr> 
+        }  
+      </table>

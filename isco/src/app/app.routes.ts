@@ -1,3 +1,7 @@
-import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { Routes } from '@angular/router';
+import { Component } from '@angular/core';
+import { IscoControls } from './isco-controls/isco-controls';
+
+export const routes: Routes = [{path: 'isco-controls', component: IscoControls}]; 
+

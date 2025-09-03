@@ -1,15 +1,15 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-
 import { ControlStrengthsService } from './services/controlstrengths.service';
 
 import { RouterOutlet } from '@angular/router';
+//    import { IscoControls } from './isco-controls/isco-controls';
 
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, /*IscoControls*/],
   templateUrl: 'app.html',
   styleUrl: './app.css',
   standalone: true
@@ -22,7 +22,7 @@ export class App implements OnInit {
   controls: any;
   constructor(private controlStrengthsService: ControlStrengthsService) { }
 
-  ngOnInit() {
+  ngOnInit() { 
 
     this.title = 'Hello, isco Hier';
     this.controlStrengthsService.getControlStrengths().subscribe(
