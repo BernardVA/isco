@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ControlStrengthsService } from '../services/controlstrengths.service';
 @Component({
   selector: 'app-isco-controls',
   templateUrl: './isco-controls.html',
-  styleUrl: './isco-controls.css'
+  styleUrl: './isco-controls.css',
+  imports: [CommonModule]
 })
 export class IscoControls implements OnInit {
 

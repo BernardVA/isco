@@ -1,28 +1,745 @@
-<p>isco-controls works, Bernard!</p>
+
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta
+    content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes,shrink-to-fit=no"
+    name="viewport">
+  <title>Control Strength - IRAM2</title>
+  <style type="text/css">
+    svg:not(:root).svg-inline--fa {
+      overflow: visible
+    }
+
+    .svg-inline--fa {
+      display: inline-block;
+      font-size: inherit;
+      height: 1em;
+      overflow: visible;
+      vertical-align: -.125em
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -.225em
+    }
+
+    .svg-inline--fa.fa-w-1 {
+      width: .0625em
+    }
+
+    .svg-inline--fa.fa-w-2 {
+      width: .125em
+    }
+
+    .svg-inline--fa.fa-w-3 {
+      width: .1875em
+    }
+
+    .svg-inline--fa.fa-w-4 {
+      width: .25em
+    }
+
+    .svg-inline--fa.fa-w-5 {
+      width: .3125em
+    }
+
+    .svg-inline--fa.fa-w-6 {
+      width: .375em
+    }
+
+    .svg-inline--fa.fa-w-7 {
+      width: .4375em
+    }
+
+    .svg-inline--fa.fa-w-8 {
+      width: .5em
+    }
+
+    .svg-inline--fa.fa-w-9 {
+      width: .5625em
+    }
+
+    .svg-inline--fa.fa-w-10 {
+      width: .625em
+    }
+
+    .svg-inline--fa.fa-w-11 {
+      width: .6875em
+    }
+
+    .svg-inline--fa.fa-w-12 {
+      width: .75em
+    }
+
+    .svg-inline--fa.fa-w-13 {
+      width: .8125em
+    }
+
+    .svg-inline--fa.fa-w-14 {
+      width: .875em
+    }
+
+    .svg-inline--fa.fa-w-15 {
+      width: .9375em
+    }
+
+    .svg-inline--fa.fa-w-16 {
+      width: 1em
+    }
+
+    .svg-inline--fa.fa-w-17 {
+      width: 1.0625em
+    }
+
+    .svg-inline--fa.fa-w-18 {
+      width: 1.125em
+    }
+
+    .svg-inline--fa.fa-w-19 {
+      width: 1.1875em
+    }
+
+    .svg-inline--fa.fa-w-20 {
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: .3em;
+      width: auto
+    }
+
+    .svg-inline--fa.fa-border {
+      height: 1.5em
+    }
+
+    .svg-inline--fa.fa-li {
+      width: 2em
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: 1.25em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -.125em;
+      width: 1em
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transform-origin: center center;
+      transform-origin: center center
+    }
+
+    .fa-layers-counter {
+      background-color: #ff253a;
+      border-radius: 1em;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      color: #fff;
+      height: 1.5em;
+      line-height: 1;
+      max-width: 5em;
+      min-width: 1.5em;
+      overflow: hidden;
+      padding: .25em;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-bottom-right {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right
+    }
+
+    .fa-layers-bottom-left {
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: bottom left;
+      transform-origin: bottom left
+    }
+
+    .fa-layers-top-right {
+      right: 0;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top right;
+      transform-origin: top right
+    }
+
+    .fa-layers-top-left {
+      left: 0;
+      right: auto;
+      top: 0;
+      -webkit-transform: scale(.25);
+      transform: scale(.25);
+      -webkit-transform-origin: top left;
+      transform-origin: top left
+    }
+
+    .fa-lg {
+      font-size: 1.3333333333em;
+      line-height: .75em;
+      vertical-align: -.0667em
+    }
+
+    .fa-xs {
+      font-size: .75em
+    }
+
+    .fa-sm {
+      font-size: .875em
+    }
+
+    .fa-1x {
+      font-size: 1em
+    }
+
+    .fa-2x {
+      font-size: 2em
+    }
+
+    .fa-3x {
+      font-size: 3em
+    }
+
+    .fa-4x {
+      font-size: 4em
+    }
+
+    .fa-5x {
+      font-size: 5em
+    }
+
+    .fa-6x {
+      font-size: 6em
+    }
+
+    .fa-7x {
+      font-size: 7em
+    }
+
+    .fa-8x {
+      font-size: 8em
+    }
+
+    .fa-9x {
+      font-size: 9em
+    }
+
+    .fa-10x {
+      font-size: 10em
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: 2.5em;
+      padding-left: 0
+    }
+
+    .fa-ul>li {
+      position: relative
+    }
+
+    .fa-li {
+      left: -2em;
+      position: absolute;
+      text-align: center;
+      width: 2em;
+      line-height: inherit
+    }
+
+    .fa-border {
+      border: solid .08em #eee;
+      border-radius: .1em;
+      padding: .2em .25em .15em
+    }
+
+    .fa-pull-left {
+      float: left
+    }
+
+    .fa-pull-right {
+      float: right
+    }
+
+    .fa.fa-pull-left,
+    .fab.fa-pull-left,
+    .fal.fa-pull-left,
+    .far.fa-pull-left,
+    .fas.fa-pull-left {
+      margin-right: .3em
+    }
+
+    .fa.fa-pull-right,
+    .fab.fa-pull-right,
+    .fal.fa-pull-right,
+    .far.fa-pull-right,
+    .fas.fa-pull-right {
+      margin-left: .3em
+    }
+
+    .fa-spin {
+      -webkit-animation: fa-spin 2s infinite linear;
+      animation: fa-spin 2s infinite linear
+    }
+
+    .fa-pulse {
+      -webkit-animation: fa-spin 1s infinite steps(8);
+      animation: fa-spin 1s infinite steps(8)
+    }
+
+    @-webkit-keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+      }
+    }
+
+    .fa-rotate-90 {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+
+    .fa-rotate-180 {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg)
+    }
+
+    .fa-rotate-270 {
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg)
+    }
+
+    .fa-flip-horizontal {
+      -webkit-transform: scale(-1, 1);
+      transform: scale(-1, 1)
+    }
+
+    .fa-flip-vertical {
+      -webkit-transform: scale(1, -1);
+      transform: scale(1, -1)
+    }
+
+    .fa-flip-both,
+    .fa-flip-horizontal.fa-flip-vertical {
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1)
+    }
+
+    :root .fa-flip-both,
+    :root .fa-flip-horizontal,
+    :root .fa-flip-vertical,
+    :root .fa-rotate-180,
+    :root .fa-rotate-270,
+    :root .fa-rotate-90 {
+      -webkit-filter: none;
+      filter: none
+    }
+
+    .fa-stack {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+      width: 2.5em
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1.25em
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2.5em
+    }
+
+    .fa-inverse {
+      color: #fff
+    }
+
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto
+    }
+  </style>
+  <link rel="stylesheet" href="isco-controls.css">
+  <link href="./Control Strength - IRAM2_files/mainCss.bundle.css" asp-append-version="true" rel="stylesheet">
+  <link rel="stylesheet" href="./Control Strength - IRAM2_files/vue-multiselect.min.css">
+  <link rel="icon" type="image/png" href="https://iram2.securityforum.org/images/icons/icon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://iram2.securityforum.org/images/icons/icon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://iram2.securityforum.org/images/icons/icon-64x64.png" sizes="64x64">
+  <link rel="icon" type="image/png" href="https://iram2.securityforum.org/images/icons/icon-256x256.png"
+    sizes="256x256">
+  <script src="./Control Strength - IRAM2_files/all.min.js.download"></script>
+  <meta id="ConnectiveDocSignExtentionInstalled" name="ConnectiveDocSignExtentionInstalled"
+    data-extension-version="1.0.7">
+</head>
+
 <button (click)="loadIscoData()">Reload Data</button>
 <table>
+
+  <tr>
+    <th>controlId</th>
+    <th>relevance</th>
+    <th>implementation</th>
+    <th>cost</th>
+  </tr>
+  @for (control of controls; track control.controlId) {
+  <tr>
+    <td>{{control.controlId}}</td>
+    <td> {{control.relevance}}</td>
+    <td>{{control.implementation}}</td>
+    <td> {{control.cost}}</td>
+  </tr>
+  }
+</table>
+
+<div class="col-12 d-flex justify-content-end p-0"><button id="exportControlStrengthToCSV"
+    class="btn btn-secondary btn-sm">Export CSV</button></div> <!---->
+<div class="VueTables VueTables--client" id="mainTable" style="">
+  <div class="row" style="display: none;">
+    <div class="col-md-12">
+      <div class="form-group form-inline float-left VueTables__search"></div>
+      <div class="form-group form-inline float-right VueTables__limit"></div>
+    </div>
+  </div>
+  <div class="table-responsive">
+
+    <div class="VuePagination row col-md-12 justify-content-center">
+      <nav class="text-center">
+        <ul class="pagination VuePagination__pagination" style="display: none;">
+          <li class="VuePagination__pagination-item page-item  VuePagination__pagination-item-prev-chunk disabled">
+            <a href="javascript:void(0);" disabled="disabled" class="page-link">&lt;&lt;</a>
+          </li>
+          <li class="VuePagination__pagination-item page-item  VuePagination__pagination-item-prev-page disabled">
+            <a href="javascript:void(0);" disabled="disabled" class="page-link">&lt;</a>
+          </li>
+          <li class="VuePagination__pagination-item page-item active"><a href="javascript:void(0)"
+              class="page-link active" role="button">1</a></li>
+          <li class="VuePagination__pagination-item page-item  VuePagination__pagination-item-next-page disabled">
+            <a href="javascript:void(0);" disabled="disabled" class="page-link">&gt;</a>
+          </li>
+          <li class="VuePagination__pagination-item page-item  VuePagination__pagination-item-next-chunk disabled">
+            <a href="javascript:void(0);" disabled="disabled" class="page-link">&gt;&gt;</a>
+          </li>
+        </ul>
+        <p class="VuePagination__count text-center col-md-12" style="">26 records</p>
+      </nav>
+    </div>
+
+    <table class="VueTables__table table table-striped table-bordered table-hover" style="overflow: hidden;">
+      <thead>
+        <tr>
+          <th id="VueTables_th--mobile" tabindex="0" class="hide-on-desktop" style="position: relative;"><span title=""
+              class="VueTables__heading"></span>
+            <div class="resize-handle"
+              style="top: 0px; right: 0px; width: 5px; position: absolute; cursor: col-resize; user-select: none; height: 182px;">
+            </div>
+          </th>
+          <th id="VueTables_th--threatName" tabindex="0" class="VueTables__sortable hide-on-mobile threatName-width"
+            style="position: relative;"><span title="" class="VueTables__heading">Threat</span><span
+              class="VueTables__sort-icon float-right glyphicon glyphicon-sort "></span>
+            <div class="resize-handle"
+              style="top: 0px; right: 0px; width: 5px; position: absolute; cursor: col-resize; user-select: none; height: 182px;">
+            </div>
+          </th>
+          <th id="VueTables_th--threatEventName" tabindex="0"
+            class="VueTables__sortable hide-on-mobile threatEventName-width" style="position: relative;"><span title=""
+              class="VueTables__heading">Threat
+              Event</span><span class="VueTables__sort-icon float-right glyphicon glyphicon-sort "></span>
+            <div class="resize-handle"
+              style="top: 0px; right: 0px; width: 5px; position: absolute; cursor: col-resize; user-select: none; height: 182px;">
+            </div>
+          </th>
+          <th id="VueTables_th--assetName" tabindex="0" class="VueTables__sortable hide-on-mobile assetName-width"
+            style="position: relative;"><span title="" class="VueTables__heading">Asset</span><span
+              class="VueTables__sort-icon float-right glyphicon glyphicon-sort "></span>
+            <div class="resize-handle"
+              style="top: 0px; right: 0px; width: 5px; position: absolute; cursor: col-resize; user-select: none; height: 182px;">
+            </div>
+          </th>
+          <th id="VueTables_th--componentName" tabindex="0"
+            class="VueTables__sortable hide-on-mobile componentName-width" style="position: relative;"><span title=""
+              class="VueTables__heading">Component</span><span
+              class="VueTables__sort-icon float-right glyphicon glyphicon-sort "></span>
+            <div class="resize-handle"
+              style="top: 0px; right: 0px; width: 5px; position: absolute; cursor: col-resize; user-select: none; height: 182px;">
+            </div>
+          </th>
+          <th id="VueTables_th--calculatedControlStrength" tabindex="0"
+            class="VueTables__sortable hide-on-mobile calculatedControlStrength-width" style="position: relative;"><span
+              title="" class="VueTables__heading">Calculated Control Strength</span><span
+              class="VueTables__sort-icon float-right glyphicon glyphicon-sort "></span>
+            <div class="resize-handle"
+              style="top: 0px; right: 0px; width: 5px; position: absolute; cursor: col-resize; user-select: none; height: 182px;">
+            </div>
+          </th>
+          <th id="VueTables_th--moderatedControlStrengthRatingScale" tabindex="0"
+            class="VueTables__sortable hide-on-mobile moderatedControlStrengthRatingScale-width"
+            style="position: relative;"><span title="" class="VueTables__heading">Moderated Control Strength</span><span
+              class="VueTables__sort-icon float-right glyphicon glyphicon-sort "></span>
+            <div class="resize-handle"
+              style="top: 0px; right: 0px; width: 5px; position: absolute; cursor: col-resize; user-select: none; height: 182px;">
+            </div>
+          </th>
+          <th id="VueTables_th--comments" tabindex="0" class="VueTables__sortable hide-on-mobile comments-width"
+            style="position: relative;"><span title="" class="VueTables__heading">Comments</span><span
+              class="VueTables__sort-icon float-right glyphicon glyphicon-sort "></span>
+            <div class="resize-handle"
+              style="top: 0px; right: 0px; width: 5px; position: absolute; cursor: col-resize; user-select: none; height: 182px;">
+            </div>
+          </th>
+          <th id="VueTables_th--actions" tabindex="0" class="hide-on-mobile actions-width" style="position: relative;">
+            <span title="" class="VueTables__heading"></span>
+            <div class="resize-handle"
+              style="top: 0px; right: 0px; width: 5px; position: absolute; cursor: col-resize; user-select: none; height: 182px;">
+            </div>
+          </th>
+        </tr>
+        <tr class="VueTables__filters-row">
+          <th class="hide-on-desktop">
+            <div class="VueTables__mobile-filter-wrapper"></div>
+          </th>
+          <th class="hide-on-mobile threatName-width">
+            <div class="VueTables__threatName-filter-wrapper">
+              <div id="VueTables__threatName-filter" class="VueTables__list-filter">
+                <select name="vf__threatName" class="form-control">
+                  <option value="">Select Threat</option>
+                  <option value="Damage to or loss of external communications">
+                    Damage to or loss of external communications</option>
+                  <option value="Employee (privileged)">Employee (privileged)
+                  </option>
+                  <option value="Nation State">Nation State</option>
+                  <option value="Power failure or fluctuation">Power failure or
+                    fluctuation</option>
+                </select>
+              </div>
+            </div>
+          </th>
+          <th class="hide-on-mobile threatEventName-width">
+            <div class="VueTables__threatEventName-filter-wrapper">
+              <div id="VueTables__threatEventName-filter" class="VueTables__list-filter"><select
+                  name="vf__threatEventName" class="form-control">
+                  <option value="">Select Threat Event3</option>
+                  <option value="Accidental physical damage">Accidental physical
+                    damage</option>
+                  <option value="Damage to or loss of external communications">
+                    Damage to or loss of external communications</option>
+                  <option value="Gathering information about the physical details of the organisations premises">
+                    Gathering information about the physical details of the
+                    organisations premises</option>
+                  <option value="Gathering of publicly-available information about an organisation">
+                    Gathering of publicly-available information about an
+                    organisation</option>
+                  <option value="Loss of information systems">Loss of information
+                    systems</option>
+                  <option value="Mishandling of critical and/or sensitive information by authorised users">
+                    Mishandling of critical and/or sensitive information by
+                    authorised users</option>
+                  <option value="Power failure or fluctuation">Power failure or
+                    fluctuation</option>
+                  <option value="Unauthorised network scanning and/or probing">
+                    Unauthorised network scanning and/or probing</option>
+                  <option value="User error (accidental)">User error (accidental)
+                  </option>
+                  <option value="User error (negligence)">User error (negligence)
+                  </option>
+                </select></div>
+            </div>
+          </th>
+          <th class="hide-on-mobile assetName-width">
+            <div class="VueTables__assetName-filter-wrapper">
+              <div id="VueTables__assetName-filter" class="VueTables__list-filter">
+                <select name="vf__assetName" class="form-control">
+                  <option value="">Select Asset</option>
+                  <option value="Declarations reports">Declarations reports
+                  </option>
+                  <option value="Log files">Log files</option>
+                  <option value="Unprocessed data">Unprocessed data</option>
+                </select>
+              </div>
+            </div>
+          </th>
+          <th class="hide-on-mobile componentName-width">
+            <div class="VueTables__componentName-filter-wrapper">
+              <div id="VueTables__componentName-filter" class="VueTables__list-filter"><select name="vf__componentName"
+                  class="form-control">
+                  <option value="">Select Component</option>
+                  <option value="Database">Database</option>
+                  <option value="Life storage">Life storage</option>
+                  <option value="Web Frontend">Web Frontend</option>
+                </select></div>
+            </div>
+          </th>
+          <th class="hide-on-mobile calculatedControlStrength-width">
+            <div class="VueTables__calculatedControlStrength-filter-wrapper"></div>
+          </th>
+          <th class="hide-on-mobile moderatedControlStrengthRatingScale-width">
+            <div class="VueTables__moderatedControlStrengthRatingScale-filter-wrapper">
+            </div>
+          </th>
+          <th class="hide-on-mobile comments-width">
+            <div class="VueTables__comments-filter-wrapper"></div>
+          </th>
+          <th class="hide-on-mobile actions-width">
+            <div class="VueTables__actions-filter-wrapper"></div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
         <tr>
           <th>controlStrengthId</th>
           <th>score</th>
         </tr>
+
         @for (controlstrength of controlStrengths; track controlstrength.controlStrengthId) {
-        <tr>
-          <td>{{controlstrength.controlStrengthId}}</td>
-          <td> {{controlstrength.score}}</td>
-        </tr>   
+        <tr class="VueTables__row ">
+          <td tabindex="0" class="hide-on-desktop">
+            <div><button id="controlsBtn" class="btn btn-primary btn-sm">Controls</button> <button id="editBtn"
+                class="btn btn-primary btn-sm">Edit</button></div>
+          </td>
+          <td tabindex="0" class="hide-on-mobile threatName-width">Nation State</td>
+          <td tabindex="0" class="hide-on-mobile threatEventName-width">Unauthorised
+            network scanning and/or probing</td>
+          <td tabindex="0" class="hide-on-mobile assetName-width">Declarations reports
+          </td>
+          <td tabindex="0" class="hide-on-mobile componentName-width">Database</td>
+          <td tabindex="0" class="hide-on-mobile calculatedControlStrength-width">
+            <div>
+              <div>
+                <div class="column-grid">
+                  <div class="color-box" style="background-color: rgb(0, 255, 0);"></div>
+                  <div class="sizze"><span>
+                      High
+                    </span></div> <span class="col-6" style="">{{controlstrength.score | number:'1.2-2' }}</span>
+                    <!--   import { CommonModule } from '@angular/common'; | number:'1.2-2' -->
+                </div>
+              </div>
+            </div>
+          </td>
+          <td tabindex="0" class="hide-on-mobile moderatedControlStrengthRatingScale-width">
+            <div>
+              <div class="column-grid">
+                <div class="color-box" style="background-color: rgb(0, 255, 0);">
+                </div>
+                <div class="sizze"><b>
+                    High
+                  </b></div>
+              </div>
+            </div>
+          </td>
+          <td tabindex="0" class="hide-on-mobile comments-width">
+            <div>
+
+            </div>
+          </td>
+          <td tabindex="0" class="hide-on-mobile actions-width">
+            <div class="actions-cell"><button id="controlsBtn" class="btn btn-primary btn-sm">Controls</button> <button
+                id="editBtn" class="btn btn-sm"><span class="edit-btn"><img
+                    src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1Ni42OSA1Ni42OSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiM5YzliOWI7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5JUkFNMl9JY29uczwvdGl0bGU+PHBhdGggaWQ9IlBhdGhfMSIgZGF0YS1uYW1lPSJQYXRoIDEiIGNsYXNzPSJjbHMtMSIgZD0iTTM4LjYyLDExLjJhMy4xNiwzLjE2LDAsMCwwLTIuMjUuOTFMMzUsMTMuNTRsOS4xMSw5LjE0LDEuMzgtMS40MmEzLjIsMy4yLDAsMCwwLDAtNC41M2gwTDQwLjksMTIuMTVhMy4zLDMuMywwLDAsMC0yLjI5LTFabS01LjE5LDMuNTgtMi4xNSwyLjA3LDkuNDksOS41LDIuMi0yWk0yOS45LDE4LjM3LDE1LDMzLjE3YTEuMzMsMS4zMywwLDAsMC0uNjkuODZMMTEuMDksNDQuODVBMS4zNSwxLjM1LDAsMCwwLDEyLDQ2LjU0YTEuMzMsMS4zMywwLDAsMCwuNzksMEwyMy42LDQzLjM1YTEuMzgsMS4zOCwwLDAsMCwxLjA4LS45MUwzOS4zOSwyNy44NmwtMi0yTDIyLjI3LDQxbC02LjA5LDEuNzctMS4yOS0xLjI5LDEuODUtNi4zNCwxNS0xNC45M1ptMy4yOCwzLjMyTDE4LDM2Ljg3bDIuMi40OC4zLDJMMzUuNzIsMjQuMjNaIi8+PC9zdmc+"
+                    alt="Edit"></span></button></div>
+          </td>
+        </tr><!---->
         }
-        <tr>  
-          <th>controlId</th>
-          <th>relevance</th>
-          <th>implementation</th> 
-          <th>cost</th>
-        </tr> 
-        @for (control of controls; track control.controlId) {
-        <tr>
-          <td>{{control.controlId}}</td>
-          <td> {{control.relevance}}</td>
-          <td>{{control.implementation}}</td>
-          <td> {{control.cost}}</td>
-        </tr> 
-        }  
-      </table>
+      </tbody>
+    </table>
