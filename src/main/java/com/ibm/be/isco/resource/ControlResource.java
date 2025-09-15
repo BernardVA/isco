@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/controls")
+
+// 6. Handle HTTP requests and responses, using DTOs.
 public class ControlResource {
     @Autowired
     private ControlService controlService;

@@ -7,6 +7,7 @@ import lombok.Data;
 
 @Data
 @JsonRootName(value = "ControlStrength")
+//5. Data Transfer Objects used to expose data via the API.
 public class ControlStrengthDTO {
     private Long controlStrengthId;
     private Float score;

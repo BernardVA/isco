@@ -5,6 +5,7 @@ import com.ibm.be.isco.resource.api.ControlDTO;
 import org.springframework.stereotype.Component;
 
 @Component
+// 4. Convert between entity objects and DTOs.
 public class ControlMapper {
     public ControlDTO toDto(Control entity) {
         if (entity == null) return null;
@@ -29,7 +30,7 @@ public class ControlMapper {
     }
 
     public Object toDTo(Control value) {
-        // TODO Auto-generated method stub
+      
         throw new UnsupportedOperationException("Unimplemented method 'toDTO'");
     }
 }

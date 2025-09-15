@@ -5,6 +5,7 @@ import com.ibm.be.isco.resource.api.ControlStrengthDTO;
 import org.springframework.stereotype.Component;
 
 @Component
+// 4. Convert between entity objects and DTOs.
 public class ControlStrengthMapper {
     public ControlStrengthDTO toDto(ControlStrength entity) {
         if (entity == null) return null;

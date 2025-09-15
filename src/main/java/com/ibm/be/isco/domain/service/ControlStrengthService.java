@@ -12,6 +12,7 @@ import java.util.Optional;
 import java.time.LocalDateTime;
 
 @Service
+//3. Contain business logic and interact with repositories.
 public class ControlStrengthService {
 
     @Autowired

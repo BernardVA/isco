@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/control-strengths")
+//6. Handle HTTP requests and responses, using DTOs.
 public class ControlStrengthResource {
     @Autowired
     private ControlStrengthService controlStrengthService;

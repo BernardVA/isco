@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+//3. Contain business logic and interact with repositories.
 public class ControlService {
     @Autowired
     private ControlRepository controlRepository;

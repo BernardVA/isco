@@ -6,6 +6,7 @@ import lombok.Data;
 
 @Data
 @JsonRootName(value = "Control")
+//5. Data Transfer Objects used to expose data via the API.
 public class ControlDTO {
     private Long controlId;
     private Long relevance;

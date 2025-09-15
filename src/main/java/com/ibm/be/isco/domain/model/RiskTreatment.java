@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 import lombok.Data;
 
 @Entity
+//1. Represent database tables and are managed by JPA/Hibernate.
 @Table(name = "risk_treatment")
 @Data
 public class RiskTreatment {

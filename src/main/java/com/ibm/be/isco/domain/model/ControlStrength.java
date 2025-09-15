@@ -7,6 +7,7 @@ import lombok.Data;
 @Entity
 @Table(name = "control_strength")
 @Data
+//1. Represent database tables and are managed by JPA/Hibernate.
 public class ControlStrength {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
