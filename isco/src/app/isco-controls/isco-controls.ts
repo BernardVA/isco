@@ -18,7 +18,7 @@ export class IscoControls implements OnInit {
 
     this.loadIscoData()
 }
-
+// Method to load data, defined in controls.service.ts
   loadIscoData() {
     this.controlStrengthsService.getControlStrengths().subscribe(
       (data) => {
