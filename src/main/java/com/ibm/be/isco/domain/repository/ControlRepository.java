@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-//2. Provide CRUD operations for entities.
+//2. Provide CRUD operations for entities, here controls.
 public interface ControlRepository extends JpaRepository<Control, Long> {
 }
