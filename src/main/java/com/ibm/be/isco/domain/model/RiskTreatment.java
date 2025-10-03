@@ -22,6 +22,7 @@ public class RiskTreatment {
       allocationSize = 1)
   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "risk_treatment_id_seq")
   private Long riskTreatmentId;
+  
 
   @Column(name = "title", nullable = false)
   private String title;
