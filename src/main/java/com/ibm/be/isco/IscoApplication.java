@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class IscoApplication {
 
   public static void main(String[] args) {
-    int toRemove2 = 0;// only to set a breakpoint
+
     SpringApplication.run(IscoApplication.class, args);
   }
 }
