@@ -1,1 +1,14 @@
+name: Run on master Only
 
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: master
+    steps:
+
+      - name: Run script
+        run: echo "This runs only on the master branch! BVA"
