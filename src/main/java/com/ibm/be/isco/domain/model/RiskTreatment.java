@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import lombok.Data;
 
 @Entity
-//1. Represent database tables and are managed by JPA/Hibernate.
+// 1. Represent database tables and are managed by JPA/Hibernate.
 @Table(name = "risk_treatment")
 @Data
 public class RiskTreatment {
@@ -22,7 +22,6 @@ public class RiskTreatment {
       allocationSize = 1)
   @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "risk_treatment_id_seq")
   private Long riskTreatmentId;
-  
 
   @Column(name = "title", nullable = false)
   private String title;

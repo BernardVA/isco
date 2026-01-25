@@ -1,24 +1,26 @@
 package com.ibm.be.isco.domain.service;
 
-import com.ibm.be.isco.domain.model.Control;
-import com.ibm.be.isco.domain.model.ControlStrength;
-import com.ibm.be.isco.domain.repository.ControlRepository;
+import com.ibm.be.isco.domain.repository.Control_implementationRepository;
 import com.ibm.be.isco.domain.repository.ControlStrengthRepository;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
-import java.time.LocalDateTime;
+import com.ibm.be.isco.domain.model.ControlStrength;
+import com.ibm.be.isco.domain.model.Control_implementation;
 
 @Service
-//3. Contain business logic and interact with repositories.
+// 3. Contain business logic and interact with repositories.
 public class ControlStrengthService {
 
     @Autowired
     private ControlStrengthRepository controlStrengthRepository;
     @Autowired
-    private ControlRepository controlRepository;
+    private Control_implementationRepository controlRepository;
 
     public List<ControlStrength> findAll() {
         if (controlStrengthRepository.findAll().isEmpty()) {
@@ -47,20 +49,19 @@ public class ControlStrengthService {
     public float calculateControlStrength() {
 
         // Placeholder for control strength calculation logic
-        List<Control> controls = controlRepository.findAll();
+        List<Control_implementation> controls = controlRepository.findAll();
 
         long strengthTeller = 0;
         long strengthNoemer = 0;
-        for (Control control : controls) {
+        for (Control_implementation control : controls) {
             // Example logic: increment strength based on some criteria
             if (control.getRelevance() != null && control.getRelevance() != 0) {
-                strengthTeller += control.getRelevance() * control.getImplementation(); // IRAM2 metthod, page 49
+                strengthTeller
+                        += control.getRelevance() * control.getImplementation(); // IRAM2 metthod, page 49
                 strengthNoemer += control.getRelevance();
             }
-
         }
 
         return strengthTeller / (float) strengthNoemer; // IRAM2 method, page 49
-
     }
 }

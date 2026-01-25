@@ -7,18 +7,16 @@ import lombok.Data;
 @Entity
 @Table(name = "control_strength")
 @Data
-//1. Represent database tables and are managed by JPA/Hibernate.
-public class ControlStrength {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "control_strength_id")
-    private Long controlStrengthId;
+// 1. Represent database tables and are managed by JPA/Hibernate.
+public class ControlStrength{
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "control_strength_id")
+  private Long controlStrengthId;
 
-    @Column(name = "score")
-    private Float score;
+  @Column(name = "score")
+  private Float score;
 
-    @Column(name = "calculated_at")
-    private LocalDateTime calculatedAt;
-
-
+  @Column(name = "calculated_at")
+  private LocalDateTime calculatedAt;
 }
