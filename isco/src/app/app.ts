@@ -1,5 +1,5 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { ControlStrengthsService } from './services/controlstrengths.service';
+//import { ControlStrengthsService } from './services/table-list.service';
 
 import { RouterOutlet } from '@angular/router';
 //    import { IscoControls } from './isco-controls/isco-controls';
@@ -16,15 +16,14 @@ import { RouterOutlet } from '@angular/router';
 })
 
 export class App implements OnInit {
-
+/*
   protected title = 'isco 5.4';
   controlStrengths: any;
   controls: any;
   constructor(private controlStrengthsService: ControlStrengthsService) { }
-
+*/
   ngOnInit() { 
-
-    this.title = 'Hello, isco Hier';
+/*
     this.controlStrengthsService.getControlStrengths().subscribe(
       (data) => {
         this.controlStrengths = data;
@@ -38,7 +37,7 @@ export class App implements OnInit {
 
       });    
 
-
+*/
 
 
   }

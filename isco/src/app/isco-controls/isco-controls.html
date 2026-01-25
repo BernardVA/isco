@@ -7,7 +7,7 @@
     content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes,shrink-to-fit=no"
     name="viewport">
   <title>Control Strength - IRAM2</title>
-  <!-- style deleted from here-->
+
   <link rel="stylesheet" href="isco-controls.css">
   <link href="./Control Strength - IRAM2_files/mainCss.bundle.css" asp-append-version="true" rel="stylesheet">
   <link rel="stylesheet" href="./Control Strength - IRAM2_files/vue-multiselect.min.css">
@@ -20,7 +20,7 @@
   <meta id="ConnectiveDocSignExtentionInstalled" name="ConnectiveDocSignExtentionInstalled"
     data-extension-version="1.0.7">
 </head>
-
+<!-- Below method is defined in isco-controls.ts-->
 <button (click)="loadIscoData()">Reload Data</button>
 
 
@@ -277,14 +277,14 @@
           <th>Cost</th>
         </tr>
 
-        @for (control of controls; track control.controlId) {
+        @for (control_implementation of control_implementations; track control_implementation.controlId) {
         <tr class="VueTables__row ">
          
 
-          <td tabindex="0" class="hide-on-mobile assetName-width"> {{control.controlId  }}
+          <td tabindex="0" class="hide-on-mobile assetName-width"> {{control_implementation.controlId  }}
           </td>
-          <td tabindex="0" class="hide-on-mobile componentName-width"> {{control.relevance | number:'1.2-2' }}</td>
-     <td tabindex="0" class="hide-on-mobile componentName-width"> {{control.implementation | number:'1.2-2' }}</td>
+          <td tabindex="0" class="hide-on-mobile componentName-width"> {{control_implementation.relevance | number:'1.2-2' }}</td>
+     <td tabindex="0" class="hide-on-mobile componentName-width"> {{control_implementation.implementation | number:'1.2-2' }}</td>
   
           <td tabindex="0" class="hide-on-mobile calculatedControlStrength-width">
            
@@ -292,8 +292,8 @@
 
                   <div class="sizze"><span>
                       
-                    </span></div> <span class="col-6" style="">{{control.cost | number:'1.2-2' }}</span>
-                  <!--   import { CommonModule } from '@angular/common'; | number:'1.2-2' -->
+                    </span></div> <span class="col-6" style="">{{control_implementation.cost | number:'1.2-2' }}</span>
+             
                 </div>
              
           </td>

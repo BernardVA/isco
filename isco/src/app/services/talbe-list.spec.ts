@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ControlStrengthsService } from './controlstrengths.service';
+import { ControlStrengthsService } from './table-list.service';
 
 describe('ControlstrengthsService', () => {
   let service: ControlStrengthsService;

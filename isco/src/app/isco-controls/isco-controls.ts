@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ControlStrengthsService } from '../services/controlstrengths.service';
+import { TableListService } from '../services/table-list.service';
 @Component({
   selector: 'app-isco-controls',
   templateUrl: './isco-controls.html',
@@ -11,8 +11,8 @@ export class IscoControls implements OnInit {
 
 
   controlStrengths: any;
-  controls: any;
-  constructor(private controlStrengthsService: ControlStrengthsService) { }
+  control_implementations: any;
+  constructor(private tableListService: TableListService) { }
   
   ngOnInit() {
 
@@ -20,16 +20,16 @@ export class IscoControls implements OnInit {
 }
 // Method to load data, defined in controls.service.ts
   loadIscoData() {
-    this.controlStrengthsService.getControlStrengths().subscribe(
+    this.tableListService.getControlStrengths().subscribe(
       (data) => {
         this.controlStrengths = data;
         console.log('Control Strengths:', this.controlStrengths);
 
       });
-    this.controlStrengthsService.getControls().subscribe(
+    this.tableListService.getControl_implementations().subscribe(
       (data2) => {
-        this.controls = data2;
-        console.log('Controls:', this.controls);
+        this.control_implementations = data2;
+        console.log('Controls:', this.control_implementations);
 
       });
 
