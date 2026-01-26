@@ -279,26 +279,59 @@
 
         @for (control_implementation of control_implementations; track control_implementation.controlId) {
         <tr class="VueTables__row ">
-         
 
-          <td tabindex="0" class="hide-on-mobile assetName-width"> {{control_implementation.controlId  }}
+
+          <td tabindex="0" class="hide-on-mobile assetName-width"> {{control_implementation.controlId }}
           </td>
-          <td tabindex="0" class="hide-on-mobile componentName-width"> {{control_implementation.relevance | number:'1.2-2' }}</td>
-     <td tabindex="0" class="hide-on-mobile componentName-width"> {{control_implementation.implementation | number:'1.2-2' }}</td>
-  
+          <td tabindex="0" class="hide-on-mobile componentName-width"> {{control_implementation.relevance |
+            number:'1.2-2' }}</td>
+          <td tabindex="0" class="hide-on-mobile componentName-width"> {{control_implementation.implementation |
+            number:'1.2-2' }}</td>
+
           <td tabindex="0" class="hide-on-mobile calculatedControlStrength-width">
-           
-                <div class="column-grid">
 
-                  <div class="sizze"><span>
-                      
-                    </span></div> <span class="col-6" style="">{{control_implementation.cost | number:'1.2-2' }}</span>
-             
-                </div>
-             
+            <div class="column-grid">
+
+              <div class="sizze"><span>
+
+                </span></div> <span class="col-6" style="">{{control_implementation.cost | number:'1.2-2' }}</span>
+
+            </div>
+
           </td>
-          
+
         </tr><!---->
+
+
         }
+
+        <tr>
+
+          <th>threatEventId</th>
+          <th>threatEventDescr</th>
+          <th>likelihoodOfInititation</th>
+          <th>threatStrength</th>
+        </tr>
+
+        @for (threatEvent of threatEvents; track threatEvents.threatEventId) {
+        <tr class="VueTables__row ">
+
+
+          <td tabindex="0" class="hide-on-mobile assetName-width"> {{threatEvent.threatEventId }}
+          </td>
+          <td tabindex="0" class="hide-on-mobile assetName-width"> {{threatEvent.threatEventDescr }}
+          </td>
+          <td tabindex="0" class="hide-on-mobile componentName-width"> {{threatEvent.likelihoodOfInititation |
+            number:'1.2-2' }}</td>
+          <td tabindex="0" class="hide-on-mobile componentName-width"> {{threatEvent.threatStrength | number:'1.2-2' }}
+          </td>
+
+
+
+        </tr><!---->
+
+
+        }
+
       </tbody>
     </table>

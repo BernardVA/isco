@@ -15,4 +15,9 @@ export class TableListService {
     getControl_implementations() {
         return this.http.get('http://localhost:8080/api/control_implementations');
     }
+getThreatEvents() {
+        return this.http.get('http://localhost:8080/api/threat-events');
+    }
+
+    
 } 

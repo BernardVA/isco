@@ -12,6 +12,8 @@ export class IscoControls implements OnInit {
 
   controlStrengths: any;
   control_implementations: any;
+  threatEvents: any;
+  
   constructor(private tableListService: TableListService) { }
   
   ngOnInit() {
@@ -29,9 +31,13 @@ export class IscoControls implements OnInit {
     this.tableListService.getControl_implementations().subscribe(
       (data2) => {
         this.control_implementations = data2;
-        console.log('Controls:', this.control_implementations);
+        console.log('Control implementations:', this.control_implementations);
 
       });
-
+this.tableListService.getThreatEvents().subscribe(
+      (data3) => {
+        this.threatEvents = data3;
+        console.log('Threat events:', this.threatEvents);
+      });
   }
 }
