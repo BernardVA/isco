@@ -13,14 +13,15 @@ export class IscoControls implements OnInit {
   controlStrengths: any;
   control_implementations: any;
   threatEvents: any;
-  
+  threatEventControls: any;
+
   constructor(private tableListService: TableListService) { }
-  
+
   ngOnInit() {
 
     this.loadIscoData()
-}
-// Method to load data, defined in controls.service.ts
+  }
+  // Method to load data, defined in controls.service.ts
   loadIscoData() {
     this.tableListService.getControlStrengths().subscribe(
       (data) => {
@@ -34,10 +35,16 @@ export class IscoControls implements OnInit {
         console.log('Control implementations:', this.control_implementations);
 
       });
-this.tableListService.getThreatEvents().subscribe(
+    this.tableListService.getThreatEvents().subscribe(
       (data3) => {
         this.threatEvents = data3;
         console.log('Threat events:', this.threatEvents);
+      });
+
+       this.tableListService.getThreatEventControls().subscribe(
+      (data4) => {
+        this.threatEventControls = data4;
+        console.log('Threat event controls:', this.threatEventControls);
       });
   }
 }

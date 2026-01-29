@@ -18,6 +18,8 @@ export class TableListService {
 getThreatEvents() {
         return this.http.get('http://localhost:8080/api/threat-events');
     }
-
-    
+getThreatEventControls() {
+        return this.http.get('http://localhost:8080/api/threat-event-controls');
+    }
+  
 } 

@@ -330,6 +330,31 @@
 
         </tr><!---->
 
+        }
+
+        <tr>
+
+          <th>threatEventControlId</th>
+          <th>threatEventId</th>
+          <th>controlId</th>
+          <th>controlRelevanceScore</th>
+
+        </tr>
+
+        @for (threatEventControl of threatEventControls; track threatEventControl.ThreatEventControlId) {
+        <tr class="VueTables__row ">
+          <td tabindex="0" class="hide-on-mobile assetName-width"> {{threatEventControl.trheatEventControlId }}
+          </td>
+
+          <td tabindex="0" class="hide-on-mobile assetName-width"> {{threatEventControl.threatEventId }}
+          </td>
+          <td tabindex="0" class="hide-on-mobile assetName-width"> {{threatEventControl.controlId }}
+          </td>
+          <td tabindex="0" class="hide-on-mobile componentName-width"> {{threatEventControl.controlRelevanceScore |
+            number:'1.2-2' }}</td>
+      
+
+        </tr><!---->
 
         }
 
