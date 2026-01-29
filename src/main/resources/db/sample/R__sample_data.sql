@@ -22,3 +22,85 @@ VALUES
   (nextval('threat_event_id_seq'), 'Ransomware via email attachment', 0.25, 9.0),
   (nextval('threat_event_id_seq'), 'Insider data leak', 0.15, 6.0),
   (nextval('threat_event_id_seq'), 'DDoS attack on public API', 0.20, 4.0);
+
+  INSERT INTO threat_event_control (threat_event_control_id,threat_event_id, control_id, control_relevance_score, created_at)
+VALUES
+  (
+    nextval('threat_event_control_id_seq'),1,1,    4,
+    CURRENT_TIMESTAMP
+  ),
+  (
+   nextval('threat_event_control_id_seq'),1,2,    2,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),1,3,    3,
+    CURRENT_TIMESTAMP
+  ),
+  (
+  nextval('threat_event_control_id_seq'),1,4,    1,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),2,1,    4,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),2,2,    2,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),2,3,    3,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),2,4,    1,
+    CURRENT_TIMESTAMP
+  ), 
+  (
+   nextval('threat_event_control_id_seq'),3,1,    4,
+    CURRENT_TIMESTAMP
+  ),
+  (
+  nextval('threat_event_control_id_seq'), 3,2,    2,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),3,3,    3,
+    CURRENT_TIMESTAMP
+  ),
+  (
+  nextval('threat_event_control_id_seq'),3,4,    1,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),4,1,    4,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),4,2,    2,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),4,3,    3,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),4,4,    1,
+    CURRENT_TIMESTAMP
+  ),
+  (nextval('threat_event_control_id_seq'),5,1,    4,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),5,2,    2,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),5,3,    3,
+    CURRENT_TIMESTAMP
+  ),
+  (
+nextval('threat_event_control_id_seq'),5,4,    1,
+    CURRENT_TIMESTAMP
+  );

@@ -30,3 +30,11 @@ create table threat_events (
    threat_strength           float,
    constraint threat_event_id_pk primary key ( threat_event_id )
 );
+
+-- Junction table for many-to-many relation between threat_events and control_implementation
+create table threat_event_control (
+   threat_event_control_id bigserial not null,
+   threat_event_id         bigint not null,
+   control_id              bigint not null,
+   control_relevance_score int,
+   created_at              timestamp default current_timestamp);
